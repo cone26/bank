@@ -4,15 +4,17 @@
   --color-darkgreen: #149566;
   --color-green: #04c584;
   --color-lightgreen: #10df99;
+  --color-greengrey: #91b5be;
   --color-white: #ffff;
   --color-darkwhite: #fbfbfb;
   --color-grey: #8395a7;
   --color-lightgrey: #c8d6e5;
   --color-darkgrey: #2f3640;
+  --color-orange: orange;
   /* font-size */
   --font-large: 32px;
   --font-medium: 22px;
-  --font-small: 16px;
+  --font-small: 17px;
   --font-micro: 12px;
   /* font-weight */
   --fontweight-regular: 400;
@@ -28,6 +30,7 @@
 body {
   margin: 0;
   font-family: 'Noto Sans KR', sans-serif;
+  box-sizing: border-box;
 }
 h1 {
   font-size: var(--font-large);
@@ -138,4 +141,54 @@ button {
 }
 .nav-menus .menu.menu:hover {
   color: var(--color-lightgreen);
+}
+/* popular card */
+#popular-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popular-card__rank {
+  align-items: center;
+  width: 60%;
+}
+.card {
+  /* width: 60%; */
+  display: flex;
+  align-items: center;
+  border: 3px solid var(--color-darkwhite);
+  padding: 8px 20px;
+  margin-right: 20px;
+  justify-content: space-between;
+  border-radius: var(--border-radius);
+  box-shadow: 1px 1px 3px var(--color-lightgrey);
+}
+.card__content {
+  display: flex;
+  align-items: center;
+}
+.card .active {
+  display: block;
+}
+.card h3 {
+  color: var(--color-orange);
+  font-weight: var(--fontweight-bold);
+  margin-right: 25px;
+  margin: 0 16px 0 0;
+}
+.card p {
+  font-size: var(--font-medium);
+  font-weight: var(--fontweight-regular);
+  margin: 0;
+}
+#popular-card button {
+  background-color: var(--color-greengrey);
+  padding: 22px 16px;
+  border-radius: var(--border-radius);
+  color: var(--color-white);
+  font-size: var(--font-small);
+  font-weight: var(--fontweight-bold);
+}
+.card img {
+  width: 70px;
 }
