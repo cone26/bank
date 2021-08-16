@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+:root {
+  /* color */
+  --color-darkgreen: #149566;
+  --color-green: #04c584;
+  --color-lightgreen: #10df99;
+  --color-white: #ffff;
+  --color-darkwhite: #fbfbfb;
+  --color-grey: #8395a7;
+  --color-lightgrey: #c8d6e5;
+  --color-darkgrey: #2f3640;
+  /* font-size */
+  --font-large: 18px;
+  --font-medium: 16px;
+  --font-small: 14px;
+  --font-micro: 12px;
+  /* font-weight */
+  --fontweight-regular: 400;
+  --fontweight-medium: 500;
+  --fontweight-bold: 700;
+
+  /* animation */
+  --animation-time: 0.3s;
+  /* border */
+  --border-radius: 4px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+h1 {
+  font-size: var(--font-large);
+  font-weight: var(--fontweight-bold);
+  padding: 12px 0;
+}
+h3 {
+  font-size: var(--font-medium);
+  font-weight: var(--fontweight-medium);
+  padding: 10px 0;
+}
+h5 {
+  font-size: var(--font-small);
+  font-weight: var(--fontweight-regular);
+  padding: 8px 0;
+}
+span,
+p {
+  font-size: var(--font-micro);
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+button {
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+/* header */
