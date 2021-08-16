@@ -10,9 +10,9 @@
   --color-lightgrey: #c8d6e5;
   --color-darkgrey: #2f3640;
   /* font-size */
-  --font-large: 18px;
-  --font-medium: 16px;
-  --font-small: 14px;
+  --font-large: 32px;
+  --font-medium: 22px;
+  --font-small: 16px;
   --font-micro: 12px;
   /* font-weight */
   --fontweight-regular: 400;
@@ -67,7 +67,7 @@ button {
   box-shadow: 0px 0.5px 3px var(--color-lightgrey);
 }
 .top__left {
-  margin-left: 20px;
+  margin-left: 30px;
 }
 .top__right {
   display: flex;
@@ -78,6 +78,7 @@ button {
   padding-right: 16px;
   margin-right: 16px;
   border-right: 0.8px solid;
+  cursor: pointer;
 }
 /* div 넣어서 선 만들기 시도해봐 */
 /* .right__btn :after {
@@ -89,12 +90,52 @@ button {
 .top__left button {
   border: 0.7px solid var(--color-lightgrey);
   background-color: var(--color-white);
-  padding: 8px;
+  padding: 6px 8px;
   border-radius: var(--border-radius);
   font-weight: var(--fontweight-bold);
   font-size: var(--font-small);
+
+  margin-right: 8px;
+}
+.left__certification {
+  color: var(--color-grey);
+}
+.left__download {
   color: var(--color-darkgrey);
 }
-.top__left button:last-child {
+.left__download i {
+  font-size: var(--font-medium);
   color: var(--color-grey);
+  padding: 0px 3px;
+}
+.header__bottom {
+  display: flex;
+  padding: 8px 6px;
+  box-shadow: 0px 2px 6px var(--color-lightgrey);
+}
+.left__logo {
+  display: flex;
+  align-items: center;
+  background-color: inherit;
+  width: 240px;
+  height: 65px;
+}
+.left__logo img {
+  max-width: 30%;
+}
+.left__logo p {
+  font-size: var(--font-large);
+  font-weight: var(--fontweight-bold);
+}
+.nav-menus {
+  display: flex;
+  margin-left: 50px;
+}
+.nav-menus .menu {
+  font-size: var(--font-medium);
+  padding: 0px 20px;
+  cursor: pointer;
+}
+.nav-menus .menu.menu:hover {
+  color: var(--color-lightgreen);
 }
