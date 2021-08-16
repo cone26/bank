@@ -59,3 +59,42 @@ button {
   cursor: pointer;
 }
 /* header */
+.header__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-darkwhite);
+  box-shadow: 0px 0.5px 3px var(--color-lightgrey);
+}
+.top__left {
+  margin-left: 20px;
+}
+.top__right {
+  display: flex;
+  color: var(--color-grey);
+  margin-right: 50px;
+}
+.right__btn {
+  padding-right: 16px;
+  margin-right: 16px;
+  border-right: 0.8px solid;
+}
+/* div 넣어서 선 만들기 시도해봐 */
+/* .right__btn :after {
+  content: ' ';
+  width: 0.8px;
+  height: 3px;
+  background-color: var(--color-grey);
+} */
+.top__left button {
+  border: 0.7px solid var(--color-lightgrey);
+  background-color: var(--color-white);
+  padding: 8px;
+  border-radius: var(--border-radius);
+  font-weight: var(--fontweight-bold);
+  font-size: var(--font-small);
+  color: var(--color-darkgrey);
+}
+.top__left button:last-child {
+  color: var(--color-grey);
+}
